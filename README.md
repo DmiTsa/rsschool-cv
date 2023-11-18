@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://DmiTsa.github.io/rsschool-cv/index.html
+https://DmiTsa.github.io/rsschool-cv/cv
