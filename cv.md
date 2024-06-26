@@ -25,8 +25,8 @@ I strive to become a full-stack developer, I love the learning process itself, I
 
 ## Pet projects
 
-- small project guessing game on vanilla js [small guess game](https://github.com/DmiTsa/GuessCardGame)
-- first project on react(with redux) typeScript [match game](https://github.com/DmiTsa/duo-cards-ts)
+- small project guessing game on vanilla js [small guess game](https://github.com/DmiTsa/GuessCardGame "small guess game")
+- first project on react(with redux) typeScript [match game](https://github.com/DmiTsa/duo-cards-ts "match game")
 
 ## Education
 
