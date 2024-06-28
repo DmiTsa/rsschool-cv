@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.container {
+    width: 1220px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: lightgreen
+}
