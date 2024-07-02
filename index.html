@@ -5,13 +5,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My CV</title>
+    <title>Dmitry Taskaev</title>
 </head>
 
 <body>
-    <div class="container">
-        <span>My CV</span>
+    <!-- favicon -->
+    <div class="container bgShadow">
+        <header>
+            <div class="content">
+                <h1 class="name">Dmitry Taskaev</h1>
+                <div>fire.d\_</div>
+                <div>DmiTsa</div>
+                <nav>
+                    <ul class="linkMenu">
+                        <li><a href="#">skills</a></li>
+                        <li><a href="#">code</a></li>
+                        <li><a href="#">courses</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">education</a></li>
+                        <li><a href="#">languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="./image/avatar.jpg" alt="profile avatar">
+        </header>
     </div>
+    <div class="container color1Shadow">
+        <section class="sectionWrap summary">
+            <h2 class="sectionTitle">
+                summary
+            </h2>
+            <p class="paragraph-m"> I strive to become a full-stack developer, I love the learning process itself, I
+                try to master as many
+                technologies and frameworks as possible. For now, I only use my knowledge to create small utilities to
+                help with
+                my work. I strive to improve and optimize work processes</p>
+        </section>
+    </div>
+    <div class="container color1Shadow">
+        <section class="sectionWrap skills">
+            <div class="sectionTitle">
+                skills
+            </div>
+            <div class="skillsItems">
+                <div class="skillsItem">
+                    <img src="./icons/git-logo.png" alt="git logo">
+                    <span>Git</span>
+                    <span>(beginner)</span>
+                </div>
+                <div class="skillsItem">
+                    <img src="./icons/pascal-logo.png" alt="pascal logo">
+                    <span>Pascal</span>
+                    <span>(middle)</span>
+                </div>
+                <div class="skillsItem">
+                    <img src="./icons/vba-logo.jpg" alt="vba logo">
+                    <span>VBA macros</span>
+                    <span>(beginner)</span>
+                </div>
+                <div class="skillsItem">
+                    <img src="./icons/java-logo.png" alt="java logo">
+                    <span>Java</span>
+                    <span>(beginner)</span>
+                </div>
+                <div class="skillsItem">
+                    <img src="./icons/JavaScript-logo.png" alt="javascript logo">
+                    <span>Java script</span>
+                    <span>(middle)</span>
+                </div>
+                <div class="skillsItem">
+                    <img src="./icons/typescript-logo.png" alt="typescript logo">
+                    <span>Type script</span>
+                    <span>(beginner)</span>
+                </div>
+                <div class="skillsItem">
+                    <img src="./icons/node-js-icon.png" alt="nodejs logo">
+                    <span>Node JS</span>
+                    <span>(beginner)</span>
+                </div>
+                <div class="skillsItem">
+                    <img src="./icons/react-logo.png" alt="react logo">
+                    <span>React</span>
+                    <span>(beginner)</span>
+                </div>
+                <div class="skillsItem">
+                    <img src="./icons/redux-logo.png" alt="redux logo">
+                    <span>Redux</span>
+                    <span>(beginner)</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container color1Shadow">
+        <section class="sectionWrap code">
+            <h2 class="sectionTitle">
+                code
+            </h2>
+            <pre>
+                <span>Функция преобразует одно из полей объекта, который передается в качестве параметра. Данное поле заполняется массивом рандомных объектов, заданных интерфейсом</span>
+                <code>
+                    import type { gameSet, level } from "../types"
+
+type fullLevelCreator = (gs: gameSet) => level
+
+const fullLevelCreator = (gs: gameSet) => {
+    const { dif, sets } = gs
+    const typesTile: number[] = []
+
+    for (let i = 0; i < sets; i++) {
+        for (let j = 0; j < dif; j++) {
+            typesTile.push(i)
+        }
+    }
+
+    for (let i = typesTile.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [typesTile[i], typesTile[j]] = [typesTile[j], typesTile[i]];
+    }
+
+    return {
+      ...gs,
+        tiles: typesTile.map((tileType, i) => {
+            return { id: i, type: tileType, isOpened: false, isEnabled: true }
+        })
+    }
+}
+
+export default fullLevelCreator
+                </code>
+            </pre>
+            <pre>
+                <span>Функция используется в мини игре на чистом js. Обеспечивает сброс игровых параметров в начальное состояние и удаление слушателей событий.</span>
+                <code>
+                    const gameOver = () => {
+                        attempt = 0;
+                        level = 0;
+                        footer.classList.add("hidden");
+                      
+                        field.removeEventListener("click", fieldController);
+                        footer.removeEventListener("click", footerController);
+                        settings.removeEventListener("click", settingsController);
+                      };
+                </code>
+            </pre>
+        </section>
+    </div>
+    <div class="container color1Shadow">
+        <section class="sectionWrap courses">
+            <h2 class="sectionTitle">
+                courses
+            </h2>
+            <div class="coursesContent">
+                <div class="coursesCard">
+                    coursesCard
+                </div>
+                <div class="coursesCard">
+                    coursesCard
+                </div>
+                <div class="coursesCard">
+                    coursesCard
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- projects (ссылки на выполненные проекты) -->
+    <!-- - small project guessing game on vanilla js [small guess game](https://github.com/DmiTsa/GuessCardGame "small
+        guess game")
+        - first project on react(with redux) typeScript [match game](https://github.com/DmiTsa/duo-cards-ts "match
+        game") -->
+    <!--  -->
+
+    <!-- education (образование) -->
+    <!-- - Vitebsk Branch of the Belarusian State Academy of Communications (telecommunication system emgineer)
+        - Belarusian State University of Informatics and Radioelectronics (automation and control systems engineer)
+        - Udemy platform (Html, css, js, react) -->
+    <!--  -->
+
+    <!-- english (уровень английского) -->
+    <!-- - Russian (native)
+        - English (A2-A1) -->
+    <!--  -->
+
+    <!-- footer  -->
+    <!--  -->
+    <!-- </div> -->
 </body>
 
 </html>
