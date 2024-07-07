@@ -1,0 +1,264 @@
+@font-face {
+    font-weight: normal;
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: "Inter";
+    src: url("./../fonts/Inter/Inter-Bold.ttf");
+}
+
+:root {
+    --first-color: #4CC9F0;
+    --secondary-color: #F72585;
+    --bg-color: #afdeec;
+    --nav-color: #7209B7;
+    --nav-color-l: #d8aaf7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    color: #0e0e0e;
+}
+
+.mainContainer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionWrap {
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    margin: 20px 0;
+    background-color: var(--first-color);
+    background: var(--bg-color);
+}
+
+.sectionTitle {
+    width: 40px;
+    margin: 0 10px;
+    writing-mode: vertical-lr;
+    text-align: right;
+    font-size: 1.5rem;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    transform: rotate(-180deg);
+}
+
+.shadowBlack-l {
+    box-shadow: 2px 2px 10px black;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.paragraph {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.6rem;
+    font-family: "Inter";
+    text-align: justify;
+}
+
+.card-sm {
+    width: 170px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px;
+    border: 2px solid var(--nav-color);
+    border-radius: 15px;
+    background-color: var(--nav-color-l);
+}
+
+.card-sm img {
+    width: 100px;
+}
+
+.card-l {
+    width: 355px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px;
+    border: 2px solid var(--nav-color);
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.4;
+    background-color: var(--nav-color-l);
+}
+
+.card-l img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.greenBold {
+    color: green;
+    font-weight: bold;
+}
+
+.yellowBold {
+    color: yellow;
+    font-weight: bold;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/* #region  HEADER*/
+
+.header {
+    height: 280px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--first-color);
+}
+
+.header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.avatar img {
+    height: 320px;
+    border-radius: 15px;
+    filter: drop-shadow(2px 5px 10px black);
+}
+
+.name * {
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+}
+
+.social .item {
+    display: flex;
+    align-items: center;
+}
+
+.social .item img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px 10px 0;
+    border-radius: 50%;
+}
+
+.navMenu {
+    display: flex;
+    row-gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navMenu li a {
+    margin: 0 10px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--nav-color);
+}
+
+.navMenu li a:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/* #endregion  */
+
+/* #region SUMMARY  */
+
+.summary p {
+    margin-top: 20px;
+}
+
+/* #endregion  */
+
+/* #region CODE  */
+
+.code {
+    background-color: black;
+}
+
+.descriptionCode {
+    color: green;
+}
+
+.code code {
+    color: #fafafa;
+}
+
+/* #endregion  */
+
+/* #region FOOTER  */
+
+.footer {
+    height: 80px;
+    position: relative;
+    background-color: black;
+}
+
+.footer .content {
+    position: absolute;
+    bottom: 10px;
+    color: #fafafa;
+}
+
+.content a {
+    color: #fafafa;
+}
+
+.footer img {
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* #endregion */

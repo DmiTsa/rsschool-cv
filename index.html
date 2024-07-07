@@ -4,29 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="icons/favicon_io/favicon-32x32.png">
     <title>Dmitry Taskaev</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <!-- favicon -->
-        <header class="bgShadow">
-            <div>
-                <h1 class="name">Dmitry Taskaev</h1>
-                <div class="social">
-                    <img src="./icons/inst-logo.jpg" alt="instagram logo">
-                    <p class="paragraph-m">fire.d_</p>
+    <div class="mainContainer">
+
+        <header class="sectionWrap header">
+
+            <div class="content">
+
+                <div class="name">
+                    <h1>Dmitry Taskaev</h1>
                 </div>
+
                 <div class="social">
-                    <img src="./icons/github-logo.jpg" alt="github logo">
-                    <p class="paragraph-m">DmiTsa</p>
+
+                    <div class="item">
+                        <img class="shadowBlack-l" src="./icons/inst-logo.jpg" alt="instagram logo">
+                        <h3><a href=#!" rel="noopener noreferrer">fire.d_</a></h3>
+                    </div>
+
+                    <div class="item">
+                        <img class="shadowBlack-l" src="./icons/github-logo.jpg" alt="github logo">
+                        <h3><a href="https://github.com/DmiTsa" target="_blank" rel="noopener noreferrer">DmiTsa</a>
+                        </h3>
+                    </div>
+
                 </div>
+
                 <nav>
-                    <ul class="linkMenu">
+                    <ul class="navMenu">
                         <li><a href="#skills">skills</a></li>
                         <li><a href="#code">code</a></li>
                         <li><a href="#courses">courses</a></li>
@@ -35,122 +47,132 @@
                         <li><a href="#languages">languages</a></li>
                     </ul>
                 </nav>
+
             </div>
-            <img src="./image/avatar.jpg" alt="profile avatar">
+
+            <div class="avatar">
+                <img src="./image/avatar.jpg" alt="profile avatar">
+            </div>
+
         </header>
 
-        <section id="summary" class="sectionWrap color1Shadow summary">
+        <section id="summary" class="sectionWrap shadowBlack-l summary">
+
             <h2 class="sectionTitle">
                 summary
             </h2>
-            <p class="paragraph-m"> I strive to become a full-stack developer, I love the learning process itself, I
+
+            <p class="paragraph"> I strive to become a full-stack developer, I love the learning process itself, I
                 try to master as many
                 technologies and frameworks as possible. For now, I only use my knowledge to create small utilities
                 to
                 help with
                 my work. I strive to improve and optimize work processes</p>
+
         </section>
 
-        <section id="skills" class="sectionWrap color1Shadow skills">
-            <div class="sectionTitle">
+        <section id="skills" class="sectionWrap shadowBlack-l skills">
+
+            <h2 class="sectionTitle">
                 skills
-            </div>
-            <div class="skillsItems">
-                <div class="skillsItem">
+            </h2>
+
+            <ul class="cardList">
+                <li class="card-sm">
                     <img src="./icons/git-logo.png" alt="git logo">
-                    <span>Git</span>
-                    <span>(beginner)</span>
-                </div>
-                <div class="skillsItem">
+                    <h3>Git</h3>
+                    <p class="greenBold">level: beginner</p>
+                </li>
+                <li class="card-sm">
                     <img src="./icons/pascal-logo.png" alt="pascal logo">
-                    <span>Pascal</span>
-                    <span>(middle)</span>
-                </div>
-                <div class="skillsItem">
+                    <h3>Pascal</h3>
+                    <p class="yellowBold">level: middle</p>
+                </li>
+                <li class="card-sm">
                     <img src="./icons/vba-logo.jpg" alt="vba logo">
-                    <span>VBA macros</span>
-                    <span>(beginner)</span>
-                </div>
-                <div class="skillsItem">
+                    <h3>VBA macros</h3>
+                    <p class="greenBold">level: beginner</p>
+                </li>
+                <li class="card-sm">
                     <img src="./icons/java-logo.png" alt="java logo">
-                    <span>Java</span>
-                    <span>(beginner)</span>
-                </div>
-                <div class="skillsItem">
+                    <h3>Java</h3>
+                    <p class="greenBold">level: beginner</p>
+                </li>
+                <li class="card-sm">
                     <img src="./icons/JavaScript-logo.png" alt="javascript logo">
-                    <span>Java script</span>
-                    <span>(middle)</span>
-                </div>
-                <div class="skillsItem">
+                    <h3>Java Script</h3>
+                    <p class="yellowBold">level: middle</p>
+                </li>
+                <li class="card-sm">
                     <img src="./icons/typescript-logo.png" alt="typescript logo">
-                    <span>Type script</span>
-                    <span>(beginner)</span>
-                </div>
-                <div class="skillsItem">
+                    <h3>Type Script</h3>
+                    <p class="greenBold">level: beginner</p>
+                </li>
+                <li class="card-sm">
                     <img src="./icons/node-js-icon.png" alt="nodejs logo">
-                    <span>Node JS</span>
-                    <span>(beginner)</span>
-                </div>
-                <div class="skillsItem">
+                    <h3>Node JS</h3>
+                    <p class="greenBold">level: beginner</p>
+                </li>
+                <li class="card-sm">
                     <img src="./icons/react-logo.png" alt="react logo">
-                    <span>React</span>
-                    <span>(beginner)</span>
-                </div>
-                <div class="skillsItem">
+                    <h3>React</h3>
+                    <p class="greenBold">level: beginner</p>
+                </li>
+                <li class="card-sm">
                     <img src="./icons/redux-logo.png" alt="redux logo">
-                    <span>Redux</span>
-                    <span>(beginner)</span>
-                </div>
-            </div>
+                    <h3>Redux</h3>
+                    <p class="greenBold">level: beginner</p>
+                </li>
+            </ul>
+
         </section>
 
-        <section id="code" class="sectionWrap color1Shadow code">
+        <section id="code" class="sectionWrap shadowBlack-l code">
+
             <h2 class="sectionTitle">
                 code
             </h2>
-            <div class="codeSection">
-                <div class="section">
-                    <p class="descriptionCode">Функция преобразует одно из полей объекта, который передается в
-                        качестве
-                        параметра. Данное поле заполняется массивом рандомных объектов, заданных интерфейсом</p>
-                    <pre>
-                            <code>
-import type { gameSet, level } from "../types"
 
-type fullLevelCreator = (gs: gameSet) => level
-
-const fullLevelCreator = (gs: gameSet) => {
+            <div class="code">
+                <p class="descriptionCode">Функция преобразует одно из полей объекта, который передается в
+                    качестве
+                    параметра. Данное поле заполняется массивом рандомных объектов, заданных интерфейсом</p>
+                <pre>
+                        <code>
+    import type { gameSet, level } from "../types"
+    
+    type fullLevelCreator = (gs: gameSet) => level
+    
+    const fullLevelCreator = (gs: gameSet) => {
     const { dif, sets } = gs
     const typesTile: number[] = []
-
-for (let i = 0; i < sets; i++) {
+    
+    for (let i = 0; i < sets; i++) {
     for (let j = 0; j < dif; j++) {
-        typesTile.push(i)
+    typesTile.push(i)
     }
-}
-
-for (let i = typesTile.length - 1; i > 0; i--) {
+    }
+    
+    for (let i = typesTile.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
     [typesTile[i], typesTile[j]] = [typesTile[j], typesTile[i]];
-}
-
-return {
+    }
+    
+    return {
     ...gs,
     tiles: typesTile.map((tileType, i) => {
     return { id: i, type: tileType, isOpened: false, isEnabled: true }
     })
-}
-}
-
-export default fullLevelCreator
-                            </code>
-                        </pre>
-                </div>
-                <div class="section">
-                    <p class="descriptionCode">Функция используется в мини игре на чистом js. Обеспечивает сброс
-                        игровых
-                        параметров в начальное состояние и удаление слушателей событий.</p>
-                    <pre>
+    }
+    }
+    
+    export default fullLevelCreator
+                        </code>
+                    </pre>
+                <p class="descriptionCode">Функция используется в мини игре на чистом js. Обеспечивает сброс
+                    игровых
+                    параметров в начальное состояние и удаление слушателей событий.</p>
+                <pre>
                         <code>
 const gameOver = () => {
     attempt = 0;
@@ -163,70 +185,75 @@ const gameOver = () => {
     };
                         </code>
                     </pre>
-                </div>
             </div>
+
         </section>
 
-        <section id="courses" class="sectionWrap color1Shadow courses">
+        <section id="couses" class="sectionWrap shadowBlack-l courses">
+
             <h2 class="sectionTitle">
-                courses
+                couses
             </h2>
-            <div class="coursesContent">
-                <div class="coursesCard">
+
+            <ul class="cardList">
+                <li class="card-l">
                     <img src="./icons/logo-udemy-large.jpg" alt="logo udemy courses">
                     <h3>
                         <a href="https://www.udemy.com/course/react-ru/" target="_blank">React - Полный Курс по
                             React,
                             Redux и Redux Toolkit</a>
                     </h3>
-                </div>
-                <div class="coursesCard">
+                </li>
+                <li class="card-l">
                     <img src="./icons/logo-udemy-large.jpg" alt="logo udemy courses">
                     <h3>
                         <a href=" https://www.udemy.com/course/nodejs-ru" target="_blank">Node.js - Полный Курс по
                             Node.js</a>
                     </h3>
-                </div>
-                <div class="coursesCard">
+                </li>
+                <li class="card-l">
                     <img src="./icons/logo-udemy-large.jpg" alt="logo udemy courses">
                     <h3>
                         <a href="https://www.udemy.com/course/javascript_full" target="_blank">Полный курс по
                             JavaScript
                             + React - с нуля до результата</a>
                     </h3>
-                </div>
-                <div class="coursesCard">
+                </li>
+                <li class="card-l">
                     <img src="./icons/logo-udemy-large.jpg" alt="logo udemy courses">
                     <h3>
                         <a href="https://www.udemy.com/course/webdeveloper" target="_blank">WEB-разработчик</a>
                     </h3>
-                </div>
-                <div class="coursesCard">
+                </li>
+                <li class="card-l">
                     <img src="./icons/youtube-logo.png" alt="logo youtube">
                     <h3>
                         <a href="https://www.youtube.com/@Bogdan_Stashchuk" target="_blank">Bogdan Stashchuk</a>
                     </h3>
-                </div>
-                <div class="coursesCard">
+                </li>
+                <li class="card-l">
                     <img src="./icons/youtube-logo.png" alt="logo youtube">
                     <h3>
                         <a href="https://www.youtube.com/@REDGroup" target="_blank">RED Group</a>
                     </h3>
-                </div>
-                <div class="coursesCard">
+                </li>
+                <li class="card-l">
                     <img src="./icons/youtube-logo.png" alt="logo youtube">
                     <h3>
                         <a href=" https://www.youtube.com/@YauhenKavalchuk" target="_blank">webDev</a>
                     </h3>
-                </div>
-            </div>
+                </li>
+            </ul>
+
         </section>
 
-        <section id="projects" class="sectionWrap color1Shadow projects">
+        <section id="projects" class="sectionWrap shadowBlack-l projects">
+
             <h2 class="sectionTitle">
                 projects
             </h2>
-            <p class="paragraph-m">I have two small projects. The first is a <strong><a
+
+            <p class="paragraph">I have two small projects. The first is a <strong><a
                         href="https://github.com/DmiTsa/GuessCardGame" target="_blank">guessing
                         game</a></strong> stylized as
                 a super
@@ -251,44 +278,86 @@ const gameOver = () => {
                 project is
                 80% complete - some design edits and minor bug fixes are still needed.
             </p>
+
         </section>
 
-        <section id="education" class="sectionWrap color1Shadow education">
+        <section id="education" class="sectionWrap shadowBlack-l education">
+
             <h2 class="sectionTitle">
                 education
             </h2>
-            <p class="paragraph-m"><a href="https://vfbsac.by/" target="_blank">Vitebsk Branch of the Belarusian
-                    State Academy
-                    of Communications
-                    (Specialization: telecommunication
-                    system emgineer, graduated in 2005)</a>
-                <br>
-                <br>
-                <a href="" target="_blank">Belarusian State University of Informatics and
-                    Radioelectronics (Specialization: automation and control systems engineer, graduated in
-                    2013)</a>
-            </p>
+
+            <ul class="cardList">
+
+                <li class="card-l">
+                    <img src="./icons/BSAC-logo.jpg" alt="logo Belarusian State Academy">
+
+                    <h3>
+                        <a href="https://vfbsac.by/" target="_blank">Vitebsk Branch of the Belarusian State Academy of
+                            Communications</a>
+                    </h3>
+
+                    <p>Specialization: telecommunication
+                        system engineer</p>
+
+                    <p>Graduated in 2008</p>
+                </li>
+
+                <li class="card-l">
+                    <img src="./icons/BSUIR-logo.jpg" alt="logo Belarusian State University of Informatics and
+                    Radioelectronics">
+
+                    <h3>
+                        <a href="https://www.bsuir.by/" target="_blank">Belarusian State University of Informatics and
+                            Radioelectronics</a>
+                    </h3>
+
+                    <p>Specialization: automation and control systems engineer</p>
+
+                    <p>Graduated in 2013</p>
+                </li>
+
+            </ul>
+
         </section>
 
-        <section id="languages" class="sectionWrap color1Shadow languages">
+        <section id="languages" class="sectionWrap shadowBlack-l languages">
+
             <h2 class="sectionTitle">
                 languages
             </h2>
-            <p class="paragraph-m">Russian (native language)
-                <br>
-                <br>
-                English (Level A1 tested <a href="https://examinator.epam.com/">epam
-                    examinator)</a>
-            </p>
-        </section>
-        <!-- </div> -->
 
-        <footer class="sectionWrap darkShadow">
-            <p class="paragraph-m whiteText">Created by <a href="https://github.com/DmiTsa">DmiTsa</a> 2024
-            </p>
-            <img src="./icons/rs-logo.png" alt="rs school logo">
+            <ul class="cardList">
+                <li class="card-sm">
+                    <h3>Russian</h3>
+                    <p class="textCenter">level: C2</p>
+                    <p class="textCenter">native</p>
+                </li>
+
+                <li class="card-sm">
+                    <h3>English</h3>
+                    <p class="textCenter">level: A1</p>
+                    <p class="textCenter">Tested <a href="https://examinator.epam.com/">epam
+                            examinator</a></p>
+                </li>
+            </ul>
+
+        </section>
+
+        <footer class="sectionWrap shadowBlack-l footer">
+
+            <div class="content">
+                <span class="paragraph">Created by</span>
+                <a class="paragraph" href="https://github.com/DmiTsa">DmiTsa</a>
+                <span class="paragraph">2024</span>
+            </div>
+            <a href="https://rs.school/courses/javascript-ru" target="_blank">
+                <img src="./icons/rs-logo.png" alt="rs school logo">
+            </a>
         </footer>
+
     </div>
+
 </body>
 
 </html>
