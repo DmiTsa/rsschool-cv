@@ -61,23 +61,47 @@
 
             <section id="code">
                 <h2>My code</h2>
-                <pre>code</pre>
+                <pre>
+import { AppHeader } from "@/features/header";
+import { ROUTES } from "@/shared/model/routes";
+import { Outlet, useLocation } from "react-router-dom";
+import { Providers } from "./providers";
+
+export function App() {
+  const location = useLocation();
+  const isAuthPage =
+    location.pathname === ROUTES.LOGIN || location.pathname === ROUTES.REGISTER;
+
+  return ();
+}
+                </pre>
             </section>
 
             <section id="projects">
                 <h2>My projects</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/DmiTsa/GuessCardGame" target="_blank">Guess Card Game</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DmiTsa/duo-cards-ts">Duo cards</a>
+                    </li>
+                </ul>
             </section>
 
             <section id="education">
                 <h2>My education</h2>
+                <p>Vitebsk branch of the Belarusian State Academy of Communications</p>
+                <p>Belarusian State University of Radio Electronics</p>
+                <p>English level: A2</p>
             </section>
         </main>
 
         <footer class="footer">
-            <a href="http://">github</a>
+            <a href="https://github.com/DmiTsa">GitHub DmiTsa</a>
             <span>2025</span>
-            <a href="http://">
-                <img src="" alt="js course stage 0">
+            <a href="https://app.rs.school/course/student">
+                <img class="rs-logo" src="./rs-logo.svg" alt="js course stage 0">
             </a>
         </footer>
     </div>
