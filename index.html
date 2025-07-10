@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My CV</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1><a href="https://rs.school/" target="_blank">RSS School</a></h1>
+                <nav>
+                    <ul class="main-menu">
+                        <li><a href="#yourself">About yourself</a></li>
+                        <li><a href="#skills">My skills</a></li>
+                        <li><a href="#code">My code</a></li>
+                        <li><a href="#projects">My projects</a></li>
+                        <li><a href="#education">My education</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <img class="avatar" src="./avatar.jpg" alt="avatar">
+        </header>
+
+        <main>
+            <section id="yourself">
+                <h2>About yourself</h2>
+                <div class="contacts">
+                    <span>Contacts: </span>
+                    <ul>
+                        <li class="contact "><a href="https://github.com/DmiTsa" target="_blank">Github:
+                                DmiTsa</a></li>
+                        <li class="contact"><a href="https://discord.com/" target="_blank">Discord:
+                                FireD(dmi_tsa)</a></li>
+                    </ul>
+                </div>
+                <p class="text">Once again I try to become the coolest developer and god of full-stack applications</p>
+            </section>
+
+            <section id="skills">
+                <h2>My skills</h2>
+                <ul>
+                    <li>
+                        JS Programming
+                    </li>
+
+                    <li>
+                        Algoritmization
+                    </li>
+
+                    <li>
+                        Automatization work processes
+                    </li>
+                </ul>
+            </section>
+
+            <section id="code">
+                <h2>My code</h2>
+                <pre>
+import { AppHeader } from "@/features/header";
+import { ROUTES } from "@/shared/model/routes";
+import { Outlet, useLocation } from "react-router-dom";
+import { Providers } from "./providers";
+
+export function App() {
+  const location = useLocation();
+  const isAuthPage =
+    location.pathname === ROUTES.LOGIN || location.pathname === ROUTES.REGISTER;
+
+  return ();
+}
+                </pre>
+            </section>
+
+            <section id="projects">
+                <h2>My projects</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/DmiTsa/GuessCardGame" target="_blank">Guess Card Game</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DmiTsa/duo-cards-ts">Duo cards</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>My education</h2>
+                <p>Vitebsk branch of the Belarusian State Academy of Communications</p>
+                <p>Belarusian State University of Radio Electronics</p>
+                <p>English level: A2</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <a href="https://github.com/DmiTsa">GitHub DmiTsa</a>
+            <span>2025</span>
+            <a href="https://app.rs.school/course/student">
+                <img class="rs-logo" src="./rs-logo.svg" alt="js course stage 0">
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
